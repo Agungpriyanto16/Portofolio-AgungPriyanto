@@ -9,22 +9,22 @@ const groups = [
 
 function Skills() {
   return (
-    <section id="skills" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="skills" className="py-12 sm:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Stack that ships <span className="text-slate-500">fast.</span></h2>
-          <p className="mt-3 text-sm text-slate-600 max-w-2xl">Focused on modern web development across the full stack — from responsive user interfaces to backend systems and APIs.</p>
+          <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight break-words">Stack that ships <span className="text-slate-500">fast.</span></h2>
+          <p className="mt-3 text-sm sm:text-base text-slate-600 max-w-2xl leading-relaxed break-words">Focused on modern web development across the full stack — from responsive user interfaces to backend systems and APIs.</p>
         </motion.div>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {groups.map((g, i) => (
-            <motion.div key={g.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i*0.08 }} className="glass glass-hover rounded-[24px] p-6 relative overflow-hidden">
+            <motion.div key={g.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i*0.08 }} className="glass glass-hover rounded-2xl sm:rounded-[24px] p-5 sm:p-6 relative overflow-hidden min-w-0">
               <div className={`absolute -top-10 -right-10 w-32 h-32 rounded-full bg-gradient-to-br ${g.accent} opacity-15 blur-2xl`} />
-              <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${g.accent} grid place-items-center text-white text-sm shadow-lg`}>{g.icon}</div>
-              <h3 className="mt-4 text-lg font-bold text-slate-900">{g.title}</h3>
+              <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${g.accent} grid place-items-center text-white text-sm shadow-lg shrink-0`}>{g.icon}</div>
+              <h3 className="mt-4 text-base sm:text-lg font-bold text-slate-900 break-words">{g.title}</h3>
               <div className="mt-4 flex flex-wrap gap-2">
                 {g.items.map(t=>(
-                  <span key={t} className="text-xs font-mono px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-slate-700">{t}</span>
+                  <span key={t} className="text-[11px] sm:text-xs font-mono px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full bg-slate-50 border border-slate-200 text-slate-700 break-words">{t}</span>
                 ))}
               </div>
               <div className="mt-6 h-1 rounded-full bg-slate-100 overflow-hidden">

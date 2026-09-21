@@ -27,8 +27,8 @@ function App() {
                 <WorkExperience />
                 <Portfolio />
                 <Contact />
-                <footer className="relative border-t border-slate-200 py-8 text-center">
-                  <p className="text-sm text-slate-500 font-mono">© 2026 Agung Priyanto — Crafted with glass & code</p>
+                <footer className="relative border-t border-slate-200 py-6 sm:py-8 text-center px-4">
+                  <p className="text-xs sm:text-sm text-slate-500 font-mono break-words">© 2026 Agung Priyanto — Crafted with glass & code</p>
                 </footer>
               </main>
             }

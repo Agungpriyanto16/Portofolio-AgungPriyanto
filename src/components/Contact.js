@@ -47,36 +47,36 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20">
-      <div className="container mx-auto px-4">
-        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="glass-strong rounded-[28px] overflow-hidden relative">
+    <section id="contact" className="py-12 sm:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="glass-strong rounded-2xl sm:rounded-[28px] overflow-hidden relative">
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/[0.04] via-indigo-500/[0.04] to-violet-500/[0.04] pointer-events-none" />
-          <div className="relative grid lg:grid-cols-2 gap-0">
-            <div className="p-8 sm:p-10">
-              <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900">Let's build<br /><span className="text-gradient">something great.</span></h2>
-              <p className="mt-4 text-sm leading-relaxed text-slate-600">Have an idea or need a developer? Reach out — I reply fast and love turning concepts into shipped products.</p>
-              <div className="mt-8 space-y-3">
-                <a href="mailto:agungpriyanto160203@gmail.com" className="flex items-center gap-3 rounded-2xl bg-slate-50 border border-slate-200 px-4 py-3 hover:bg-white hover:border-slate-300 transition-colors">
-                  <span className="w-9 h-9 rounded-xl btn-gradient grid place-items-center text-white text-sm">✉</span>
-                  <div><p className="text-xs font-mono text-slate-500">EMAIL</p><p className="text-sm font-medium text-slate-900">agungpriyanto160203@gmail.com</p></div>
+          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-0">
+            <div className="p-5 sm:p-8 lg:p-10 min-w-0">
+              <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 break-words leading-tight">Let's build<br /><span className="text-gradient">something great.</span></h2>
+              <p className="mt-4 text-sm leading-relaxed text-slate-600 break-words">Have an idea or need a developer? Reach out — I reply fast and love turning concepts into shipped products.</p>
+              <div className="mt-6 sm:mt-8 space-y-3">
+                <a href="mailto:agungpriyanto160203@gmail.com" className="flex items-center gap-3 rounded-2xl bg-slate-50 border border-slate-200 px-3 sm:px-4 py-3 hover:bg-white hover:border-slate-300 transition-colors min-w-0">
+                  <span className="w-9 h-9 rounded-xl btn-gradient grid place-items-center text-white text-sm shrink-0">✉</span>
+                  <div className="min-w-0 flex-1"><p className="text-xs font-mono text-slate-500">EMAIL</p><p className="text-xs sm:text-sm font-medium text-slate-900 break-all">agungpriyanto160203@gmail.com</p></div>
                 </a>
-                <a href="tel:082143902154" className="flex items-center gap-3 rounded-2xl bg-slate-50 border border-slate-200 px-4 py-3 hover:bg-white hover:border-slate-300 transition-colors">
-                  <span className="w-9 h-9 rounded-xl bg-white border border-slate-200 grid place-items-center text-slate-700 text-sm">☎</span>
-                  <div><p className="text-xs font-mono text-slate-500">PHONE</p><p className="text-sm font-medium text-slate-900">0821-4390-2154</p></div>
+                <a href="tel:082143902154" className="flex items-center gap-3 rounded-2xl bg-slate-50 border border-slate-200 px-3 sm:px-4 py-3 hover:bg-white hover:border-slate-300 transition-colors">
+                  <span className="w-9 h-9 rounded-xl bg-white border border-slate-200 grid place-items-center text-slate-700 text-sm shrink-0">☎</span>
+                  <div className="min-w-0"><p className="text-xs font-mono text-slate-500">PHONE</p><p className="text-sm font-medium text-slate-900">0821-4390-2154</p></div>
                 </a>
               </div>
               <div className="mt-6 flex flex-wrap gap-2 justify-center">
                 {links.map(({ label, href, Icon })=>(
-                  <a key={label} href={href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-xs font-mono px-4 py-2 rounded-full bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors">
+                  <a key={label} href={href} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-1.5 text-xs font-mono px-4 py-2 rounded-full bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors whitespace-nowrap">
                     <Icon />{label} ↗
                   </a>
                 ))}
               </div>
             </div>
-            <div className="p-8 sm:p-10 bg-slate-50/70 border-t lg:border-t-0 lg:border-l border-slate-200">
+            <div className="p-5 sm:p-8 lg:p-10 bg-slate-50/70 border-t lg:border-t-0 lg:border-l border-slate-200 min-w-0">
               <h3 className="text-sm font-bold text-slate-900">Send a message</h3>
-              <p className="text-xs text-slate-500 mt-1">Your message will be sent directly to my email.</p>
-              {status.msg && <div className={`mt-3 rounded-xl px-4 py-2.5 text-xs font-medium border ${status.type==='success'?'bg-emerald-50 text-emerald-700 border-emerald-200':'bg-red-50 text-red-700 border-red-200'}`}>{status.msg}</div>}
+              <p className="text-xs text-slate-500 mt-1 break-words">Your message will be sent directly to my email.</p>
+              {status.msg && <div className={`mt-3 rounded-xl px-4 py-2.5 text-xs font-medium border break-words ${status.type==='success'?'bg-emerald-50 text-emerald-700 border-emerald-200':'bg-red-50 text-red-700 border-red-200'}`}>{status.msg}</div>}
               <form onSubmit={handleSubmit} className="mt-6 space-y-3">
                 <input value={name} onChange={(e)=>setName(e.target.value)} placeholder="Your name" required className="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-cyan-500/40 focus:ring-2 focus:ring-cyan-500/10" />
                 <input value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Your email" type="email" required className="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-cyan-500/40 focus:ring-2 focus:ring-cyan-500/10" />

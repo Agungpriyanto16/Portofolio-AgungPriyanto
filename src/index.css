@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 html { scroll-behavior: auto; scroll-padding-top: 80px; }
+img, video { max-width: 100%; height: auto; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body {
   margin: 0;

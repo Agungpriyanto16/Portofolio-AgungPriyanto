@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const portfolio = [
-  { name: 'Miyoot – E-Commerce Website', description: 'Full-Stack Developer — React.js, Tailwind CSS & Express.js. Modern e-commerce platform with cart, auth & payment flows.', link: 'https://github.com/Agungpriyanto16/Ecommerce-Miyoot', stack: ['React','Tailwind','Express.js','MySQL'], accent: 'from-cyan-400 via-blue-500 to-indigo-500', image: '/Images/Project1.png' },
-  { name: 'SPK Konsultan Konstruksi', description: 'Decision support system for selecting construction consultants using Hierarchical IF-TOPSIS and Entropy. Built with Laravel and FastAPI (Python) for the calculation process.', link: 'https://github.com/Agungpriyanto16/SPK-Konsultan-Konstruksi', stack: ['Laravel','FastAPI','Python','Entropy','IF-TOPSIS'], accent: 'from-cyan-400 via-blue-500 to-indigo-500', image: '/Images/Project2.png'},
+  { name: 'Miyoot – E-Commerce Website', description: 'Full-Stack Developer — React.js, Tailwind CSS & Express.js. Modern e-commerce platform with cart, auth & payment flows.', link: 'https://github.com/Agungpriyanto16/Ecommerce-Miyoot', stack: ['React','Tailwind','Express.js'], accent: 'from-cyan-400 via-blue-500 to-indigo-500', image: '/Images/Project1.png' },
+  { name: 'SPK Konsultan Konstruksi', description: 'Decision support system for selecting construction consultants using Hierarchical IF-TOPSIS and Entropy. Built with Laravel and FastAPI (Python) for the calculation process.', link: 'https://github.com/Agungpriyanto16/SPK-Konsultan-Konstruksi', stack: ['Laravel','FastAPI','Python','MySQL'], accent: 'from-cyan-400 via-blue-500 to-indigo-500', image: '/Images/Project2.png'},
 ];
 
 function Portfolio() {

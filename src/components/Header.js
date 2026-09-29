@@ -97,7 +97,7 @@ function Header() {
               <img src="/Images/screen.png" alt="AP" className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl object-cover shadow-lg shrink-0" />
               <span className="block min-w-0">
                 <span className="block text-xs sm:text-sm font-bold leading-none text-slate-900 truncate">Agung Priyanto</span>
-                <span className="block text-[9px] sm:text-[10px] tracking-[0.18em] text-cyan-600 font-mono">FULL STACK DEV</span>
+                <span className="block text-[9px] sm:text-[10px] tracking-[0.18em] text-cyan-600 font-mono">Full Stack Developer</span>
               </span>
             </button>
 

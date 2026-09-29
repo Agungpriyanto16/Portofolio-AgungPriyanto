@@ -29,10 +29,13 @@ function About() {
               Informatics graduate focused on building functional, scalable & user-friendly web applications with React, Node.js, Laravel & modern technologies.
             </p>
             <p className="mt-3 text-sm sm:text-[15px] leading-relaxed text-slate-600 text-justify break-words [hyphens:auto]">
-              Hi, I’m Agung Priyanto — an Informatics graduate focused on Full Stack Web Development and passionate about building modern, functional, and user-focused web applications.
-              I have hands-on experience developing web applications using technologies such as React.js, Tailwind CSS, JavaScript, Node.js, Express.js, PHP, and Laravel. I enjoy working across both frontend and backend development, from creating responsive and intuitive user interfaces to developing backend systems and APIs.
-              I also have experience using Python and FastAPI to build a backend service for my final-year project, supporting the application’s calculation process. While continuing to strengthen my skills, I enjoy exploring new technologies and applying modern development practices to create functional and engaging digital solutions.
-              As a fresh graduate, I continue to expand my technical knowledge through personal, academic, and project-based experience. Feel free to explore my projects and development journey on GitHub: github.com/Agungpriyanto16.
+              Hi, I’m Agung Priyanto — an Informatics graduate and Full Stack Developer passionate about building modern, functional, and user-focused web applications. 
+              I have hands-on experience developing web applications using React.js, Tailwind CSS, JavaScript, Node.js, Express.js, PHP, and Laravel. 
+              I enjoy working across both frontend and backend development, from creating responsive user interfaces to developing backend systems and APIs. 
+              I also have experience using Python and FastAPI to build a backend service for my final-year project.
+              As a fresh graduate, I continue to expand my technical skills through personal, academic, and project-based experience while exploring new technologies and modern development practices. 
+              Currently, I’m also learning Next.js and Go (Golang) to broaden my knowledge of modern web development and backend technologies. 
+              Feel free to explore my projects and development journey on GitHub: github.com/Agungpriyanto16.
             </p>
             <div className="mt-6 flex flex-col xs:flex-row sm:flex-row flex-wrap gap-3">
               <ScrollLink to="portfolio" spy={S.spy} smooth={S.smooth} duration={S.duration} offset={S.offset} isDynamic={S.isDynamic} className="btn-gradient text-white text-sm font-semibold px-7 py-3 rounded-full cursor-pointer shadow-lg shadow-indigo-500/20 hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2 w-full sm:w-auto">
@@ -64,7 +67,7 @@ function About() {
                   <div className="mt-4 glass rounded-xl sm:rounded-2xl p-3 sm:p-4 flex items-center justify-between gap-3">
                     <div className="min-w-0">
                       <p className="text-sm font-bold text-slate-900 truncate">Agung Priyanto</p>
-                      <p className="text-xs font-mono text-slate-500">Surabaya • Full Stack</p>
+                      <p className="text-xs font-mono text-slate-500">Surabaya • Full Stack Developer</p>
                     </div>
                     <a href="https://github.com/Agungpriyanto16" target="_blank" rel="noreferrer" className="w-9 h-9 rounded-full btn-gradient grid place-items-center text-white text-sm shrink-0">↗</a>
                   </div>

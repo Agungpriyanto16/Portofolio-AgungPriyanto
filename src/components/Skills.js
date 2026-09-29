@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const groups = [
-  { title: 'Frontend', icon: '◧', items: ['HTML','CSS','Bootstrap','Tailwind CSS','JavaScript','React.js'], accent: 'from-cyan-400 to-blue-500' },
-  { title: 'Backend', icon: '⬡', items: ['Node.js','Express.js','PHP','Laravel','Python','Fast API','REST API'], accent: 'from-violet-400 to-indigo-500' },
+  { title: 'Frontend', icon: '◧', items: ['HTML','CSS','Bootstrap','Tailwind CSS','JavaScript','React.js','Next.js'], accent: 'from-cyan-400 to-blue-500' },
+  { title: 'Backend', icon: '⬡', items: ['Node.js','Express.js','PHP','Laravel','Python','Fast API','REST API','Go (Golang)'], accent: 'from-violet-400 to-indigo-500' },
   { title: 'Database & Tools', icon: '⬢', items: ['MySQL','Git','Github'], accent: 'from-emerald-400 to-teal-500' },
 ];
 

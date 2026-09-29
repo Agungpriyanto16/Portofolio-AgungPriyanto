@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const experiences = [
-  { role: 'Internship', company: 'RS PHC Surabaya', duration: '01 Oct 2019 – 31 Dec 2019', location: 'Surabaya, Indonesia', tag: 'IT Support / Web Development', accent: 'from-cyan-400 to-blue-500' },
+  { role: 'Internship', company: 'RS PHC Surabaya', duration: '01 Oct 2019 – 31 Dec 2019', location: 'Surabaya, Indonesia', tag: 'IT Support & Web Development', accent: 'from-cyan-400 to-blue-500' },
   { role: 'Internship', company: 'PT. Webcare Digital Indonesia', duration: '20 Jan 2025 – 20 Mar 2025', location: 'Surabaya, Indonesia', tag: 'Web Development', accent: 'from-violet-400 to-indigo-500' },
 ];
 

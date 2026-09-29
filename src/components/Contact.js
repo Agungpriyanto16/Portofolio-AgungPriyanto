@@ -54,7 +54,7 @@ function Contact() {
           <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-0">
             <div className="p-5 sm:p-8 lg:p-10 min-w-0">
               <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 break-words leading-tight">Let's build<br /><span className="text-gradient">something great.</span></h2>
-              <p className="mt-4 text-sm leading-relaxed text-slate-600 break-words">Have an idea or need a developer? Reach out — I reply fast and love turning concepts into shipped products.</p>
+              <p className="mt-4 text-sm leading-relaxed text-slate-600 break-words">Have a project idea or want to connect? Feel free to reach out — I’m always open to discussing web development, collaboration, and new opportunities.</p>
               <div className="mt-6 sm:mt-8 space-y-3">
                 <a href="mailto:agungpriyanto160203@gmail.com" className="flex items-center gap-3 rounded-2xl bg-slate-50 border border-slate-200 px-3 sm:px-4 py-3 hover:bg-white hover:border-slate-300 transition-colors min-w-0">
                   <span className="w-9 h-9 rounded-xl btn-gradient grid place-items-center text-white text-sm shrink-0">✉</span>
